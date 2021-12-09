@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F9354782761C76500F3A47C /* MegaBankExchangeRateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9354772761C76500F3A47C /* MegaBankExchangeRateApp.swift */; };
+		2F93547A2761C76500F3A47C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9354792761C76500F3A47C /* ContentView.swift */; };
+		2F93547C2761C76600F3A47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F93547B2761C76600F3A47C /* Assets.xcassets */; };
+		2F93547F2761C76600F3A47C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F93547E2761C76600F3A47C /* Preview Assets.xcassets */; };
+		2F93548B2761D02E00F3A47C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F93548A2761D02E00F3A47C /* Currency.swift */; };
+		2F93548D2761D08800F3A47C /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F93548C2761D08800F3A47C /* FetchData.swift */; };
+		2F9354902761D20400F3A47C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2F93548F2761D20400F3A47C /* SwiftyJSON */; };
+		2F9354922761D3C400F3A47C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9354912761D3C400F3A47C /* Home.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F9354742761C76500F3A47C /* MegaBankExchangeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaBankExchangeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9354772761C76500F3A47C /* MegaBankExchangeRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaBankExchangeRateApp.swift; sourceTree = "<group>"; };
+		2F9354792761C76500F3A47C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2F93547B2761C76600F3A47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F93547E2761C76600F3A47C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F93548A2761D02E00F3A47C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2F93548C2761D08800F3A47C /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		2F9354912761D3C400F3A47C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F9354712761C76500F3A47C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9354902761D20400F3A47C /* SwiftyJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F93546B2761C76500F3A47C = {
+			isa = PBXGroup;
+			children = (
+				2F9354762761C76500F3A47C /* MegaBankExchangeRate */,
+				2F9354752761C76500F3A47C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F9354752761C76500F3A47C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F9354742761C76500F3A47C /* MegaBankExchangeRate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F9354762761C76500F3A47C /* MegaBankExchangeRate */ = {
+			isa = PBXGroup;
+			children = (
+				2F9354862761CF3800F3A47C /* Model */,
+				2F9354872761CF3F00F3A47C /* ViewModel */,
+				2F9354852761CF2C00F3A47C /* View */,
+				2F9354792761C76500F3A47C /* ContentView.swift */,
+				2F9354772761C76500F3A47C /* MegaBankExchangeRateApp.swift */,
+				2F93547B2761C76600F3A47C /* Assets.xcassets */,
+				2F93547D2761C76600F3A47C /* Preview Content */,
+			);
+			path = MegaBankExchangeRate;
+			sourceTree = "<group>";
+		};
+		2F93547D2761C76600F3A47C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F93547E2761C76600F3A47C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F9354852761CF2C00F3A47C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F9354912761D3C400F3A47C /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F9354862761CF3800F3A47C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F93548A2761D02E00F3A47C /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F9354872761CF3F00F3A47C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F93548C2761D08800F3A47C /* FetchData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F9354732761C76500F3A47C /* MegaBankExchangeRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9354822761C76600F3A47C /* Build configuration list for PBXNativeTarget "MegaBankExchangeRate" */;
+			buildPhases = (
+				2F9354702761C76500F3A47C /* Sources */,
+				2F9354712761C76500F3A47C /* Frameworks */,
+				2F9354722761C76500F3A47C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegaBankExchangeRate;
+			packageProductDependencies = (
+				2F93548F2761D20400F3A47C /* SwiftyJSON */,
+			);
+			productName = MegaBankExchangeRate;
+			productReference = 2F9354742761C76500F3A47C /* MegaBankExchangeRate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F93546C2761C76500F3A47C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2F9354732761C76500F3A47C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F93546F2761C76500F3A47C /* Build configuration list for PBXProject "MegaBankExchangeRate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F93546B2761C76500F3A47C;
+			packageReferences = (
+				2F93548E2761D20400F3A47C /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 2F9354752761C76500F3A47C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F9354732761C76500F3A47C /* MegaBankExchangeRate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F9354722761C76500F3A47C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F93547F2761C76600F3A47C /* Preview Assets.xcassets in Resources */,
+				2F93547C2761C76600F3A47C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F9354702761C76500F3A47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F93548B2761D02E00F3A47C /* Currency.swift in Sources */,
+				2F93547A2761C76500F3A47C /* ContentView.swift in Sources */,
+				2F93548D2761D08800F3A47C /* FetchData.swift in Sources */,
+				2F9354922761D3C400F3A47C /* Home.swift in Sources */,
+				2F9354782761C76500F3A47C /* MegaBankExchangeRateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F9354802761C76600F3A47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F9354812761C76600F3A47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F9354832761C76600F3A47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MegaBankExchangeRate/Preview Content\"";
+				DEVELOPMENT_TEAM = 46U3CJ7CE5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kr1s.MegaBankExchangeRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F9354842761C76600F3A47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MegaBankExchangeRate/Preview Content\"";
+				DEVELOPMENT_TEAM = 46U3CJ7CE5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kr1s.MegaBankExchangeRate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F93546F2761C76500F3A47C /* Build configuration list for PBXProject "MegaBankExchangeRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9354802761C76600F3A47C /* Debug */,
+				2F9354812761C76600F3A47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F9354822761C76600F3A47C /* Build configuration list for PBXNativeTarget "MegaBankExchangeRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9354832761C76600F3A47C /* Debug */,
+				2F9354842761C76600F3A47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F93548E2761D20400F3A47C /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F93548F2761D20400F3A47C /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F93548E2761D20400F3A47C /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2F93546C2761C76500F3A47C /* Project object */;
+}
