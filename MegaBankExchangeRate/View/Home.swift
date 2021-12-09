@@ -44,6 +44,9 @@ struct Home: View
                 
             }
             .navigationTitle(Text("兆豐銀行外幣匯率"))
+            .onAppear {
+                viewModel.fetch()
+            }
         }
     }
     
