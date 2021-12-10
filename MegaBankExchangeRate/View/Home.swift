@@ -41,13 +41,24 @@ struct Home: View
                     }
                 }
                 .padding(3)
+                .toolbar {
+                    ToolbarItemGroup {
+                        Text("更新時間：\(i.updateTime)")
+                            .foregroundColor(.blue.opacity(0.7))
+                    }
+                }
                 
+            }
+            .refreshable {
+                viewModel.fetch()
             }
             .navigationTitle(Text("兆豐銀行外幣匯率"))
             .onAppear {
                 viewModel.fetch()
             }
+            
         }
+        
     }
     
     // 將貨幣名稱轉換成國旗emoji
@@ -65,6 +76,14 @@ struct Home: View
             scalar.append(UnicodeScalar(base + Int(i))!)
         }
         return String(scalar)
+    }
+    
+    func stringToDate(string: String, dateFormat: String = "yyyy-MM-dd HH:mm:ss") -> Date
+    {
+        let dateFormatter = DateFormatter.init()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = dateFormatter.date(from: string)
+        return date!
     }
 }
 

@@ -51,5 +51,7 @@ class FetchData: ObservableObject
         }
         task.resume()
     }
+    
+    
 }
 
