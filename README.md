@@ -1,6 +1,7 @@
 # SwiftUI_MegaBankCurrencyExchangeRate
 ---
 #### A Real-Time Currency Exchange Rate base on MegaBank(兆豐銀行)'s API
+#### The base currecny is New Taiwan Dollar(NTD)
 ---
 ### Screen Shots
 <img src="https://github.com/kr1s0404/SwiftUI_MegaBankCurrencyExchangeRate/blob/main/screenshot/1.png" width="223" height="447">
