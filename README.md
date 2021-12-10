@@ -17,34 +17,38 @@
 
 ## Description
 
-- A simple SwiftUI APP to demonstrate how to use haptic function on iPhone 
+- A simple SwiftUI APP to demonstrate how I implent MegaBank Post API and show all the data on iPhone in real-time 
 
-- There will be two views for you to choose. First one demonstrate the default haptic that APPLE give us. The second view is the custom haptic view. Which you can adjust the slider to feel differnt vibration.
+- Unlike the get API, the MegaBank API has to be POST which is another usage in SwiftUI
 
-- I combine tabView and NavigationLink to switch between two different views
+- The country flag part was take the currency name and remove the last letter "D" to show country flag. For instance, currency name is "USD", the country flag would be "US", so I used removeLast() founction in the code
 
 - Project was completed using 100% SwiftUI (No Storyboard)
 
-- Did not use any design pattern
+- I use a libary called "SwiftyJson" to get a better result on retrieve post API data
+
+- Design pattern: MVVM(Model-ViewModel-View)
 
 #### Frameworks
 
 - SwiftUI
-- CoreHaptics
+- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ---
 
 ### What I Learned:
-- I learned how to imply custom haptic into SwiftUI
-- Apple prvides some default haptics that we can use
-- If I want my vibration to be more precise, I have to use "prepare" in my code 
+- I learned how to call a POST API in SwiftUI
+- Show the country flag without using Apple's emoji
+- Better understandsing on JSON file
+- A new Swift feature, "refreshable" to implent pull to refresh fucntion
 
 ---
 
 ## How To Use
 
 - Clone the project and run it on Xcode
-- Your iPhone has to be at least iOS 13 or above to use the haptic function
+- The API is from MegaBank(https://www.megabank.com.tw/api/sc/RateExchange/Get_Fx_Currency)
+- I will suggest you to use "PostMan" to see what is the JSON data look from the API 
 
 ---
 
