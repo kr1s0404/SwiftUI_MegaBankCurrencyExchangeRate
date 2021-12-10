@@ -18,6 +18,3 @@ struct ExchangeRates: Codable, Identifiable, Hashable
     let cashExchangeRateSale: String
     let cashExchangeRateBuy: String
 }
-
-
-

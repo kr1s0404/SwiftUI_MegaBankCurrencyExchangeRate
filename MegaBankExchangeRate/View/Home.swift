@@ -11,6 +11,7 @@ struct Home: View
 {
     @ObservedObject var viewModel = FetchData()
     
+    
     var body: some View
     {
         NavigationView
