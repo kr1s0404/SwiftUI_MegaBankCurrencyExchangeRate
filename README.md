@@ -48,7 +48,7 @@
 
 - Clone the project and run it on Xcode
 - The API is from MegaBank(https://www.megabank.com.tw/api/sc/RateExchange/Get_Fx_Currency)
-- I will suggest you to use "PostMan" to see what is the JSON data look from the API 
+- I will suggest you to use "PostMan" to see what is the JSON data look like 
 
 ---
 
@@ -57,4 +57,4 @@
 - Instagram - [@_kr1s.4](https://www.instagram.com/_kr1s.4/)
 - Website - [Github: kr1s0404](https://github.com/kr1s0404)
 
-[Back To The Top](#SwiftUI-HapticDemo)
+[Back To The Top](#SwiftUI_MegaBankCurrencyExchangeRate)
