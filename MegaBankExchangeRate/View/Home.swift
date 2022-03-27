@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Home: View
 {
-    @ObservedObject var viewModel = FetchData()
+    @StateObject var viewModel = FetchData() // 在init的時候fetch過API了
     
     
     var body: some View
@@ -44,22 +44,17 @@ struct Home: View
                 .padding(3)
                 .toolbar {
                     ToolbarItemGroup {
-                        Text("更新時間：\(i.updateTime)")
+                        Text("更新時間：\(viewModel.updateTime)")
                             .foregroundColor(.blue.opacity(0.7))
                     }
                 }
                 
             }
+            .navigationTitle(Text("兆豐銀行外幣匯率"))
             .refreshable {
                 viewModel.fetch()
             }
-            .navigationTitle(Text("兆豐銀行外幣匯率"))
-            .onAppear {
-                viewModel.fetch()
-            }
-            
         }
-        
     }
     
     // 將貨幣名稱轉換成國旗emoji

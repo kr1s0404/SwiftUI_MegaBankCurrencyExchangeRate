@@ -17,6 +17,19 @@
 		2F9354922761D3C400F3A47C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9354912761D3C400F3A47C /* Home.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2FA40FA127F04C60007BF5A5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2F9354742761C76500F3A47C /* MegaBankExchangeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaBankExchangeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9354772761C76500F3A47C /* MegaBankExchangeRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaBankExchangeRateApp.swift; sourceTree = "<group>"; };
@@ -26,6 +39,9 @@
 		2F93548A2761D02E00F3A47C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		2F93548C2761D08800F3A47C /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		2F9354912761D3C400F3A47C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2F969BB827637219003DD0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2FA40F9127F04C5D007BF5A5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2FA40F9327F04C5D007BF5A5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9354762761C76500F3A47C /* MegaBankExchangeRate */,
+				2FA40F9027F04C5D007BF5A5 /* Frameworks */,
 				2F9354752761C76500F3A47C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +76,7 @@
 		2F9354762761C76500F3A47C /* MegaBankExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
+				2F969BB827637219003DD0A9 /* Info.plist */,
 				2F9354862761CF3800F3A47C /* Model */,
 				2F9354872761CF3F00F3A47C /* ViewModel */,
 				2F9354852761CF2C00F3A47C /* View */,
@@ -102,6 +120,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		2FA40F9027F04C5D007BF5A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA40F9127F04C5D007BF5A5 /* WidgetKit.framework */,
+				2FA40F9327F04C5D007BF5A5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +139,7 @@
 				2F9354702761C76500F3A47C /* Sources */,
 				2F9354712761C76500F3A47C /* Frameworks */,
 				2F9354722761C76500F3A47C /* Resources */,
+				2FA40FA127F04C60007BF5A5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -308,14 +336,17 @@
 		2F9354832761C76600F3A47C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"MegaBankExchangeRate/Preview Content\"";
 				DEVELOPMENT_TEAM = 46U3CJ7CE5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MegaBankExchangeRate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "兆豐外幣匯率";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -338,14 +369,17 @@
 		2F9354842761C76600F3A47C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"MegaBankExchangeRate/Preview Content\"";
 				DEVELOPMENT_TEAM = 46U3CJ7CE5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MegaBankExchangeRate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "兆豐外幣匯率";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
