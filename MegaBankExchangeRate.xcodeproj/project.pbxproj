@@ -15,7 +15,22 @@
 		2F93548D2761D08800F3A47C /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F93548C2761D08800F3A47C /* FetchData.swift */; };
 		2F9354902761D20400F3A47C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2F93548F2761D20400F3A47C /* SwiftyJSON */; };
 		2F9354922761D3C400F3A47C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9354912761D3C400F3A47C /* Home.swift */; };
+		2FA40FF827F065A2007BF5A5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA40F9127F04C5D007BF5A5 /* WidgetKit.framework */; };
+		2FA40FF927F065A2007BF5A5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA40F9327F04C5D007BF5A5 /* SwiftUI.framework */; };
+		2FA40FFC27F065A2007BF5A5 /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA40FFB27F065A2007BF5A5 /* MyWidget.swift */; };
+		2FA40FFE27F065A4007BF5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA40FFD27F065A4007BF5A5 /* Assets.xcassets */; };
+		2FA4100227F065A4007BF5A5 /* MyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FA40FF727F065A2007BF5A5 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FA4100027F065A4007BF5A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F93546C2761C76500F3A47C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA40FF627F065A2007BF5A5;
+			remoteInfo = MyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2FA40FA127F04C60007BF5A5 /* Embed App Extensions */ = {
@@ -24,6 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				2FA4100227F065A4007BF5A5 /* MyWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +58,10 @@
 		2F969BB827637219003DD0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2FA40F9127F04C5D007BF5A5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2FA40F9327F04C5D007BF5A5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2FA40FF727F065A2007BF5A5 /* MyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA40FFB27F065A2007BF5A5 /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
+		2FA40FFD27F065A4007BF5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FA40FFF27F065A4007BF5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FA40FF427F065A2007BF5A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA40FF927F065A2007BF5A5 /* SwiftUI.framework in Frameworks */,
+				2FA40FF827F065A2007BF5A5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9354762761C76500F3A47C /* MegaBankExchangeRate */,
+				2FA40FFA27F065A2007BF5A5 /* MyWidget */,
 				2FA40F9027F04C5D007BF5A5 /* Frameworks */,
 				2F9354752761C76500F3A47C /* Products */,
 			);
@@ -69,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9354742761C76500F3A47C /* MegaBankExchangeRate.app */,
+				2FA40FF727F065A2007BF5A5 /* MyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +160,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2FA40FFA27F065A2007BF5A5 /* MyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2FA40FFB27F065A2007BF5A5 /* MyWidget.swift */,
+				2FA40FFD27F065A4007BF5A5 /* Assets.xcassets */,
+				2FA40FFF27F065A4007BF5A5 /* Info.plist */,
+			);
+			path = MyWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +185,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2FA4100127F065A4007BF5A5 /* PBXTargetDependency */,
 			);
 			name = MegaBankExchangeRate;
 			packageProductDependencies = (
@@ -152,6 +194,23 @@
 			productName = MegaBankExchangeRate;
 			productReference = 2F9354742761C76500F3A47C /* MegaBankExchangeRate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2FA40FF627F065A2007BF5A5 /* MyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FA4100327F065A4007BF5A5 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */;
+			buildPhases = (
+				2FA40FF327F065A2007BF5A5 /* Sources */,
+				2FA40FF427F065A2007BF5A5 /* Frameworks */,
+				2FA40FF527F065A2007BF5A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWidgetExtension;
+			productName = MyWidgetExtension;
+			productReference = 2FA40FF727F065A2007BF5A5 /* MyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -164,6 +223,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					2F9354732761C76500F3A47C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2FA40FF627F065A2007BF5A5 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -185,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				2F9354732761C76500F3A47C /* MegaBankExchangeRate */,
+				2FA40FF627F065A2007BF5A5 /* MyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +259,14 @@
 			files = (
 				2F93547F2761C76600F3A47C /* Preview Assets.xcassets in Resources */,
 				2F93547C2761C76600F3A47C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FA40FF527F065A2007BF5A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA40FFE27F065A4007BF5A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +285,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FA40FF327F065A2007BF5A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA40FFC27F065A2007BF5A5 /* MyWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FA4100127F065A4007BF5A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FA40FF627F065A2007BF5A5 /* MyWidgetExtension */;
+			targetProxy = 2FA4100027F065A4007BF5A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F9354802761C76600F3A47C /* Debug */ = {
@@ -399,6 +486,60 @@
 			};
 			name = Release;
 		};
+		2FA4100427F065A4007BF5A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 46U3CJ7CE5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kr1s.MegaBankExchangeRate.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FA4100527F065A4007BF5A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 46U3CJ7CE5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Kr1s.MegaBankExchangeRate.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +557,15 @@
 			buildConfigurations = (
 				2F9354832761C76600F3A47C /* Debug */,
 				2F9354842761C76600F3A47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FA4100327F065A4007BF5A5 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA4100427F065A4007BF5A5 /* Debug */,
+				2FA4100527F065A4007BF5A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
