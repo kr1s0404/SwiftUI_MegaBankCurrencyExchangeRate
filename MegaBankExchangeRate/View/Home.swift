@@ -16,28 +16,28 @@ struct Home: View
     {
         NavigationView
         {
-            List(viewModel.datas) { i in
+            List(viewModel.datas) { currency in
                 LazyVStack(alignment: .leading, spacing: 5)
                 {
                     HStack
                     {
                         VStack
                         {
-                            Text(countryFlag(currency: i.currency))
+                            Text(countryFlag(currency: currency.currency))
                                 .font(.system(size: 45))
-                            Text(i.currencyName)
+                            Text(currency.currencyName)
                                 .font(.system(size: 16))
                                 .fontWeight(.bold)
-                            Text(i.currency)
+                            Text(currency.currency)
                         }
                         .padding(5)
                         
                         VStack(alignment: .leading)
                         {
-                            Text("銀行現金買入：\(i.cashExchangeRateBuy)")
-                            Text("銀行現金賣出：\(i.cashExchangeRateSale)")
-                            Text("銀行即期買入：\(i.spotExchangeRateBuy)")
-                            Text("銀行即期賣出：\(i.cashExchangeRateSale)")
+                            Text("銀行現金買入：\(currency.cashExchangeRateBuy)")
+                            Text("銀行現金賣出：\(currency.cashExchangeRateSale)")
+                            Text("銀行即期買入：\(currency.spotExchangeRateBuy)")
+                            Text("銀行即期賣出：\(currency.cashExchangeRateSale)")
                         }
                     }
                 }

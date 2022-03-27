@@ -20,6 +20,10 @@
 		2FA40FFC27F065A2007BF5A5 /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA40FFB27F065A2007BF5A5 /* MyWidget.swift */; };
 		2FA40FFE27F065A4007BF5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA40FFD27F065A4007BF5A5 /* Assets.xcassets */; };
 		2FA4100227F065A4007BF5A5 /* MyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2FA40FF727F065A2007BF5A5 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2FA4100827F082E7007BF5A5 /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4100627F082C4007BF5A5 /* WidgetModel.swift */; };
+		2FA4100B27F08315007BF5A5 /* WidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4100927F08309007BF5A5 /* WidgetProvider.swift */; };
+		2FA4100E27F08351007BF5A5 /* WidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4100C27F0833E007BF5A5 /* WidgetApp.swift */; };
+		2FA4101227F083A6007BF5A5 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4101027F08398007BF5A5 /* FetchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		2FA40FFB27F065A2007BF5A5 /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
 		2FA40FFD27F065A4007BF5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FA40FFF27F065A4007BF5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA4100627F082C4007BF5A5 /* WidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModel.swift; sourceTree = "<group>"; };
+		2FA4100927F08309007BF5A5 /* WidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetProvider.swift; sourceTree = "<group>"; };
+		2FA4100C27F0833E007BF5A5 /* WidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetApp.swift; sourceTree = "<group>"; };
+		2FA4101027F08398007BF5A5 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,11 +171,23 @@
 		2FA40FFA27F065A2007BF5A5 /* MyWidget */ = {
 			isa = PBXGroup;
 			children = (
+				2FA4100F27F08371007BF5A5 /* Network */,
 				2FA40FFB27F065A2007BF5A5 /* MyWidget.swift */,
+				2FA4100927F08309007BF5A5 /* WidgetProvider.swift */,
+				2FA4100627F082C4007BF5A5 /* WidgetModel.swift */,
+				2FA4100C27F0833E007BF5A5 /* WidgetApp.swift */,
 				2FA40FFD27F065A4007BF5A5 /* Assets.xcassets */,
 				2FA40FFF27F065A4007BF5A5 /* Info.plist */,
 			);
 			path = MyWidget;
+			sourceTree = "<group>";
+		};
+		2FA4100F27F08371007BF5A5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2FA4101027F08398007BF5A5 /* FetchData.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA4100B27F08315007BF5A5 /* WidgetProvider.swift in Sources */,
 				2FA40FFC27F065A2007BF5A5 /* MyWidget.swift in Sources */,
+				2FA4101227F083A6007BF5A5 /* FetchData.swift in Sources */,
+				2FA4100827F082E7007BF5A5 /* WidgetModel.swift in Sources */,
+				2FA4100E27F08351007BF5A5 /* WidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
